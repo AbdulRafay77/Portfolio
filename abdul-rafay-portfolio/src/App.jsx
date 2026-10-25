@@ -1,9 +1,17 @@
+import Navbar from "./components/Navbar/Navbar";
+
 function App() {
   return (
-    <main className="container">
-      <h1>Abdul Rafay Siddiqui</h1>
-      <p>Portfolio setup successful.</p>
-    </main>
+    <>
+      <Navbar />
+
+      <main className="container">
+        <div style={{ paddingTop: "120px" }}>
+          <h1>Abdul Rafay Siddiqui</h1>
+          <p>Navbar setup successful.</p>
+        </div>
+      </main>
+    </>
   );
 }
 
