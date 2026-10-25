@@ -53,28 +53,26 @@
   gap: 0.6rem;
 
   margin-bottom: 2rem;
-  padding: 0.65rem 1rem;
 
-  border: 1px solid rgba(15, 118, 110, 0.18);
-  border-radius: 999px;
+  padding: 0.55rem 0.8rem;
 
-  background: rgba(15, 118, 110, 0.05);
+  border-left: 3px solid var(--color-primary);
 
-  color: var(--color-primary);
+  background: var(--color-primary-soft);
 
-  font-size: 0.85rem;
+  color: var(--color-primary-dark);
+
+  font-size: 0.82rem;
   font-weight: 600;
 }
 
 .statusDot {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
 
   border-radius: 50%;
 
   background: var(--color-primary);
-
-  box-shadow: 0 0 0 5px rgba(15, 118, 110, 0.1);
 }
 
 .eyebrow {
@@ -89,16 +87,18 @@
 }
 
 .title {
-  max-width: 760px;
+  max-width: 720px;
 
   margin: 0;
 
   color: var(--color-text);
 
-  font-size: clamp(3.2rem, 5vw, 5.2rem);
-  font-weight: 750;
+  font-size: clamp(3rem, 4.8vw, 5rem);
 
-  line-height: 1.02;
+  font-weight: 800;
+
+  line-height: 1;
+
   letter-spacing: -0.055em;
 }
 
@@ -136,7 +136,7 @@
 
   padding: 0 1.4rem;
 
-  border-radius: 999px;
+  border-radius: 10px;
 
   font-size: 0.9rem;
   font-weight: 650;
@@ -224,14 +224,47 @@
   overflow: hidden;
 }
 
+.imageFrame {
+  position: relative;
+
+  padding: 10px;
+
+  background: var(--color-surface);
+
+  border: 1px solid var(--color-border);
+
+  border-radius: 18px;
+
+  box-shadow:
+    14px 14px 0 rgba(37, 99, 235, 0.08),
+    var(--shadow-soft);
+}
+
 .profileImage {
   width: 100%;
-  aspect-ratio: 4 / 5;
 
-  border-radius: calc(var(--radius-large) - 8px);
+  aspect-ratio: 4 / 5;
 
   object-fit: cover;
   object-position: center top;
+
+  border-radius: 11px;
+}
+
+.profileMeta {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 1rem;
+
+  margin-top: 1rem;
+
+  color: var(--color-text-muted);
+
+  font-size: 0.78rem;
+
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 .imageOverlay {
@@ -320,9 +353,9 @@
   }
 
   .visual {
-    width: min(100%, 430px);
+    width: min(100%, 390px);
 
-    justify-self: start;
+    justify-self: end;
   }
 }
 

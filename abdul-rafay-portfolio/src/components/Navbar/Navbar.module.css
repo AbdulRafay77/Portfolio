@@ -2,11 +2,16 @@
   position: fixed;
   top: 0;
   left: 0;
+
   z-index: 1000;
+
   width: 100%;
-  background: rgba(246, 245, 242, 0.9);
+
+  background: rgba(248, 250, 252, 0.86);
+
   border-bottom: 1px solid var(--color-border);
-  backdrop-filter: blur(16px);
+
+  backdrop-filter: blur(18px);
 }
 
 .navbar {
@@ -18,9 +23,10 @@
 }
 
 .brand {
-  font-size: 1.1rem;
-  font-weight: 750;
-  letter-spacing: -0.03em;
+  font-size: 1.05rem;
+  font-weight: 800;
+
+  letter-spacing: -0.04em;
 
   color: var(--color-text);
 }
@@ -75,10 +81,11 @@
   justify-content: center;
 
   min-height: 42px;
-  padding: 0 1.25rem;
+  padding: 0 1.2rem;
 
   border: 1px solid var(--color-text);
-  border-radius: 999px;
+
+  border-radius: 10px;
 
   font-size: 0.875rem;
   font-weight: 650;

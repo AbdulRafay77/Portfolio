@@ -20,7 +20,7 @@ function Hero() {
         <div className={styles.content}>
           <div className={styles.status}>
             <span className={styles.statusDot} />
-            Available for opportunities
+            Open to junior software engineering opportunities
           </div>
 
           <p className={styles.eyebrow}>
@@ -28,14 +28,15 @@ function Hero() {
           </p>
 
           <h1 className={styles.title}>
-            Building reliable
-            <span> full-stack </span>
-            applications.
+            Backend-focused engineer building
+            <span> reliable web systems.</span>
           </h1>
 
           <p className={styles.description}>
-            I&apos;m Abdul Rafay Siddiqui, a backend-focused full-stack
-            developer building secure, reliable web applications with Node.js, Express, MongoDB, and React, with a focus on APIs, authentication, testing, and backend security.
+            I&apos;m Abdul Rafay Siddiqui, a Software Engineering graduate focused on
+            backend-heavy full-stack development. I build secure, reliable web
+            applications with Node.js, Express, MongoDB, and React, with particular
+            interest in APIs, authentication, testing, and application security.
           </p>
 
           <div className={styles.actions}>
@@ -87,22 +88,17 @@ function Hero() {
         </div>
 
         <div className={styles.visual}>
-          <div className={styles.accentSquare} />
-          <div className={styles.accentCircle} />
-
-          <div className={styles.imageCard}>
+          <div className={styles.imageFrame}>
             <img
               src={profileImage}
               alt="Abdul Rafay Siddiqui"
               className={styles.profileImage}
             />
+          </div>
 
-            <div className={styles.imageOverlay}>
-              <p>Backend-focused development</p>
-              <span>
-                APIs · Authentication · Security · Testing
-              </span>
-            </div>
+          <div className={styles.profileMeta}>
+            <span>Karachi, Pakistan</span>
+            <span>Software Engineer</span>
           </div>
         </div>
       </div>
