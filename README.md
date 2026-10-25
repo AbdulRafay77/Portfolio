@@ -6,7 +6,7 @@ The site showcases my projects, technical skills, credentials, engineering appro
 
 ## Live Site
 
-Coming soon.
+[Live](https://portfolio-abdulrafay1.vercel.app/)
 
 ## Featured Work
 
