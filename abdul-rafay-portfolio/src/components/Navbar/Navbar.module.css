@@ -75,6 +75,14 @@
   width: 100%;
 }
 
+.navLink.active {
+  color: var(--color-text);
+}
+
+.navLink.active::after {
+  width: 100%;
+}
+
 .resumeButton {
   display: inline-flex;
   align-items: center;
