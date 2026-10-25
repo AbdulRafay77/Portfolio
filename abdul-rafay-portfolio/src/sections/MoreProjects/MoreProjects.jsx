@@ -6,6 +6,7 @@ import {
 import { moreProjects } from "../../data/projects";
 
 import styles from "./MoreProjects.module.css";
+import Reveal from "../../components/Reveal/Reveal";
 
 function MoreProjects() {
   return (
@@ -36,45 +37,50 @@ function MoreProjects() {
             const Icon = project.icon;
 
             return (
-              <article
-                className={styles.projectCard}
+              <Reveal
                 key={project.title}
+                delay={index * 100}
               >
-                <div className={styles.cardTop}>
-                  <span className={styles.projectNumber}>
-                    0{index + 1}
-                  </span>
-
-                  <div className={styles.projectIcon}>
-                    <Icon />
-                  </div>
-                </div>
-
-                <div className={styles.content}>
-                  <h3>{project.title}</h3>
-
-                  <p>{project.description}</p>
-                </div>
-
-                <div className={styles.technologies}>
-                  {project.technologies.map((technology) => (
-                    <span key={technology}>
-                      {technology}
-                    </span>
-                  ))}
-                </div>
-
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noreferrer"
-                  className={styles.repoLink}
+                <article
+                  className={styles.projectCard}
+                  key={project.title}
                 >
-                  <FiGithub />
-                  View repository
-                  <FiArrowUpRight />
-                </a>
-              </article>
+                  <div className={styles.cardTop}>
+                    <span className={styles.projectNumber}>
+                      0{index + 1}
+                    </span>
+
+                    <div className={styles.projectIcon}>
+                      <Icon />
+                    </div>
+                  </div>
+
+                  <div className={styles.content}>
+                    <h3>{project.title}</h3>
+
+                    <p>{project.description}</p>
+                  </div>
+
+                  <div className={styles.technologies}>
+                    {project.technologies.map((technology) => (
+                      <span key={technology}>
+                        {technology}
+                      </span>
+                    ))}
+                  </div>
+
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className={styles.repoLink}
+                  >
+                    <FiGithub />
+                    View repository
+                    <FiArrowUpRight />
+                  </a>
+                </article>
+              </Reveal>
             );
           })}
         </div>
