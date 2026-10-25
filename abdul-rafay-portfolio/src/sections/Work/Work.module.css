@@ -240,7 +240,7 @@
   border: 1px solid #cad7f5;
   border-radius: 12px;
 
-  background: white;
+  background: var(--color-surface);
 
   box-shadow:
     0 30px 70px rgba(37, 99, 235, 0.13);
@@ -359,7 +359,7 @@
   border: 1px solid var(--color-border);
   border-radius: 20px;
 
-  background: white;
+  background: var(--color-surface);
 }
 
 .secondaryVisual {
@@ -513,6 +513,10 @@
 
   .metrics > div {
     border-bottom: 1px solid var(--color-border);
+  }
+
+  .metrics > div:nth-last-child(-n + 2) {
+    border-bottom: none;
   }
 
   .contribution ul {

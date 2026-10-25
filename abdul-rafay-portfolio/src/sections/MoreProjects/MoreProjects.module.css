@@ -328,6 +328,6 @@
   }
 
   .projectCard {
-    min-height: 390px;
+    min-height: auto;
   }
 }
