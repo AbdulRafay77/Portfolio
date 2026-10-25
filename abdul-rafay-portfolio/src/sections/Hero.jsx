@@ -1,8 +1,6 @@
 import {
   ArrowRight,
   Download,
-  Github,
-  Linkedin,
   MapPin,
 } from "lucide-react";
 
