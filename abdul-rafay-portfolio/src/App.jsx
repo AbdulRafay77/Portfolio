@@ -1,14 +1,9 @@
-import Navbar from "./components/Navbar";
-import Hero from "./sections/Hero";
-
 function App() {
   return (
-    <>
-      <Navbar />
-      <main>
-        <Hero />
-      </main>
-    </>
+    <main className="container">
+      <h1>Abdul Rafay Siddiqui</h1>
+      <p>Portfolio setup successful.</p>
+    </main>
   );
 }
 
