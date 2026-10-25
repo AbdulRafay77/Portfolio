@@ -3,6 +3,7 @@ import {
   FiMonitor,
   FiCheck,
   FiStar,
+  FiExternalLink,
 } from "react-icons/fi";
 
 import styles from "./Credentials.module.css";
@@ -14,6 +15,7 @@ const simulations = [
     provider: "Forage",
     date: "Oct 2026",
     credentialId: "6add05d9d4a81158c3ec498e",
+    certificate: "/certificates/walmart-software-engineering.pdf",
     topics: [
       "Advanced Data Structures",
       "Software Architecture",
@@ -27,6 +29,7 @@ const simulations = [
     provider: "Forage",
     date: "Oct 2026",
     credentialId: "6adca289de57a23d972b54e7",
+    certificate: "/certificates/hpe-software-engineering.pdf",
     topics: [
       "RESTful Web Services",
       "Backend Development",
@@ -117,6 +120,16 @@ function Credentials() {
                 <span>CREDENTIAL ID</span>
 
                 <code>{simulation.credentialId}</code>
+
+                <a
+                  href={simulation.certificate}
+                  target="_blank"
+                  rel="noreferrer"
+                  className={styles.certificateLink}
+                >
+                  View Certificate
+                  <FiExternalLink />
+                </a>
               </div>
             </article>
           ))}
