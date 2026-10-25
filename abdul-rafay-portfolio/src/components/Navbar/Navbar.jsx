@@ -85,7 +85,7 @@ function Navbar() {
           <a
             href="/Abdul-Rafay-Siddiqui-CV.pdf"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className={styles.resumeButton}
             onClick={closeMenu}
           >
